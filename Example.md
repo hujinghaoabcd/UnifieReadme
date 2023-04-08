@@ -1,12 +1,14 @@
-<h1 align='center'>Title</h1>
+<h1 align='center'>UnifieReadme</h1>
 <p align="center">
-<a href=""><img src="https://img.shields.io/badge/My-Blog-yellow.svg" /></a>
-<a href=""><img src="https://img.shields.io/badge/My-Linkedin-green.svg" /></a>
-<a href=""><img src="https://img.shields.io/badge/Donate-Buy me a coffee-red.svg" /></a>
-<a href="http://opensource.org/licenses/MIT"><img src="https://visitor-badge.laobi.icu/badge?page_id=hujinghaoabcd.hujinghaoabcd" /></a>
+<p align="center">
+<a href=""><img src="https://img.shields.io/badge/version-0.1-yellow.svg" /></a>
+<a href=""><img src="https://img.shields.io/badge/auther-Jinghao Hu-orange.svg" /></a>
+<a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/markdown-1.0%7C2.0%7C3.0%7C4.0-blue.svg" /></a>
+<a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green.svg" /></a>
+</p>
 </p>
 
-> 简短描述 注意: 标准自述文件是为开放源码库设计的。 尽管它[以前](README.cn.md#背景)是为 Node 和 npm 项目制作的，但它也适用于其他语言的库和包管理器。
+> UnifieReadme : Build custom readme templates for all projects to ensure consistency and clarity of the code base.
 
 ## Table of Contents
 
@@ -14,52 +16,53 @@
 - [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
+    - [Generator](#generator)
 - [API](#api)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Security
 
-### Any optional sections
+...
 
 ## Background
 
-### Any optional sections
+...
 
 ## Install
 
-This module depends upon a knowledge of [Markdown]().
+This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
 
+```sh
+$ npm install --global standard-readme-spec
 ```
-```
-
-### Any optional sections
 
 ## Usage
 
-```
+This is only a documentation package. You can print out [spec.md](spec.md) to your console:
+
+```sh
+$ standard-readme-spec
+# Prints out the standard-readme spec
 ```
 
-Note: The `license` badge image link at the top of this file should be updated with the correct `:user` and `:repo`.
+### Generator
 
-### Any optional sections
+To use the generator, look at [generator-standard-readme](https://github.com/RichardLitt/generator-standard-readme). There is a global executable to run the generator in that package, aliased as `standard-readme`.
 
 ## API
 
-### Any optional sections
+...
 
 ## More optional sections
 
+...
+
 ## Contributing
 
-See [the contributing file](CONTRIBUTING.md)!
-
-PRs accepted.
-
-Small note: If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
-
-### Any optional sections
+感谢以下参与项目的人：
+<a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=800&button=false" /></a>
 
 ## License
 
-[MIT © Richard McRichface.](../LICENSE)
+[MIT © Richard Jinghaohu.](../LICENSE)
