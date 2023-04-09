@@ -26,6 +26,7 @@ English | [中文](https://github.com/hujinghaoabcd/UnifieReadme/blob/main/READM
 - [Usage](#usage)
     - [Generator](#generator)
 - [API](#api)
+- [Documentation](#Documentation)
 - [Authors](#Authors)
 - [Contributing](#contributing)
 - [License](#license)
@@ -91,9 +92,11 @@ Where input.txt is the path of the txt file to be converted and output.md is the
 
 ...
 
-## More optional sections
-
-...
+## Documentation
+ - [configuration]()
+ - [design]()
+ - [build](docs/build.md) 
+ - [statistics]()
 
 ## Authors
 
