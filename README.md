@@ -37,21 +37,42 @@ The README file should tell people why the package or software is being used, ho
 This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
 
 ```sh
-$ npm install --global standard-readme-spec
+$ npm install --global unifile-readme-spec
 ```
 
 ## Usage
 
-This is only a documentation package. You can print out [spec.md](spec.md) to your console:
+Please note that unifilereadme package only provides the function of converting txt files to markdown format, if your txt file does not meet the syntax requirements of markdown format, the converted result may have unexpected errors.:
 
-```sh
-$ standard-readme-spec
-# Prints out the standard-readme spec
+```javascript
+const fs = require('fs');
+const unifilereadme = require('unifilereadme');
+
+const txtFile = fs.readFileSync('file.txt', 'utf-8');
+const markdown = unifilereadme(txtFile);
+
+fs.writeFileSync('file.md', markdown);
 ```
 
 ### Generator
 
-To use the generator, look at [generator-standard-readme](https://github.com/RichardLitt/generator-standard-readme). There is a global executable to run the generator in that package, aliased as `standard-readme`.
+You can also use the command line tool to generate a README.md file:
+
+```sh
+$ unifilereadme --help
+
+  Usage
+    $ unifilereadme <input> <output>
+
+  Options
+    --help, -h  Show help options
+    --version, -v  Show version number
+
+  Examples
+    $ unifilereadme input.txt output.md
+```
+
+Where input.txt is the path of the txt file to be converted and output.md is the path of the generated markdown file. You can replace these two parameters according to the actual situation. The generated markdown file will be saved in the output.md file.
 
 ## API
 
