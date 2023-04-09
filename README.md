@@ -9,9 +9,11 @@
 <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green.svg" /></a>
 </p>
 
-![](https://sdasddas.oss-cn-hangzhou.aliyuncs.com/keyan/202304082359019.png)
 
 > UnifieReadme : Create a uniform README template for all projects to ensure consistency and clarity of the code base.
+
+![](https://sdasddas.oss-cn-hangzhou.aliyuncs.com/keyan/202304082359019.png)
+
 
 ## Table of Contents
 
@@ -42,7 +44,7 @@ $ npm install --global unifile-readme-spec
 
 ## Usage
 
-Please note that unifilereadme package only provides the function of converting txt files to markdown format, if your txt file does not meet the syntax requirements of markdown format, the converted result may have unexpected errors.:
+Please note that unifilereadme package only provides the function of converting txt files to markdown format, if your txt file does not meet the syntax requirements of markdown format, the converted result may have unexpected errors.
 
 ```javascript
 const fs = require('fs');
@@ -84,7 +86,7 @@ Where input.txt is the path of the txt file to be converted and output.md is the
 
 ## Authors
 
-[@Jinghaohu](https://github.com/hujinghaoabcd).
+[@JinghaoHu](https://github.com/hujinghaoabcd).
 
 ## Contributing
 
@@ -97,4 +99,4 @@ Found a mistake? There is something meaningless? Send me a [pull request](https:
 
 ## License
 
-[MIT © Richard Jinghaohu.](../LICENSE)
+[MIT © JinghaoHu.](../LICENSE)
