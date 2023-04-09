@@ -41,7 +41,7 @@ The README file should tell people why the package or software is being used, ho
 ## Features
 
  - **Harmonization :** Ensure consistency and clarity of the code base.
- 
+
  - **Customizable :** Users can modify and customize it according to their needs.
 
 
@@ -101,7 +101,8 @@ Where input.txt is the path of the txt file to be converted and output.md is the
 
 ## Contributing
 
-感谢以下参与项目的人：
+Thanks to the following people who participated in the project:
+
 <a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=800&button=false" /></a>
 
 ## Welcome to join !
