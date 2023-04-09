@@ -12,7 +12,8 @@
 
 > UnifieReadme : Create a uniform README template for all projects to ensure consistency and clarity of the code base.
 
-![](https://sdasddas.oss-cn-hangzhou.aliyuncs.com/keyan/202304082359019.png)
+![](https://sdasddas.oss-cn-hangzhou.aliyuncs.com/keyan/202304091349962.png)
+<!-- ![](https://sdasddas.oss-cn-hangzhou.aliyuncs.com/keyan/202304082359019.png) -->
 
 English | [中文](https://github.com/hujinghaoabcd/UnifieReadme/blob/main/README_CN.md)
 
@@ -20,6 +21,7 @@ English | [中文](https://github.com/hujinghaoabcd/UnifieReadme/blob/main/READM
 
 - [Security](#security)
 - [Background](#background)
+- [Features](#Features)
 - [Install](#install)
 - [Usage](#usage)
     - [Generator](#generator)
@@ -35,6 +37,13 @@ English | [中文](https://github.com/hujinghaoabcd/UnifieReadme/blob/main/READM
 ## Background
 
 The README file should tell people why the package or software is being used, how to install it, and how to use it. Unifying README files can make it easier to create and maintain README files.
+
+## Features
+
+ - **Harmonization :** Ensure consistency and clarity of the code base.
+ 
+ - **Customizable :** Users can modify and customize it according to their needs.
+
 
 ## Install
 
