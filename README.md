@@ -24,6 +24,7 @@ English | [中文](https://github.com/hujinghaoabcd/UnifieReadme/blob/main/READM
 - [Usage](#usage)
     - [Generator](#generator)
 - [API](#api)
+- [Authors](#Authors)
 - [Contributing](#contributing)
 - [License](#license)
 
