@@ -11,7 +11,7 @@
 
 ![](https://sdasddas.oss-cn-hangzhou.aliyuncs.com/keyan/202304082359019.png)
 
-> UnifieReadme : Build custom readme templates for all projects to ensure consistency and clarity of the code base.
+> UnifieReadme : Create a uniform README template for all projects to ensure consistency and clarity of the code base.
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@
 
 ## Background
 
-...
+The README file should tell people why the package or software is being used, how to install it, and how to use it. Unifying README files can make it easier to create and maintain README files.
 
 ## Install
 
@@ -61,10 +61,18 @@ To use the generator, look at [generator-standard-readme](https://github.com/Ric
 
 ...
 
+## Authors
+
+[@Jinghaohu](https://github.com/hujinghaoabcd).
+
 ## Contributing
 
 感谢以下参与项目的人：
 <a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=800&button=false" /></a>
+
+## Welcome to join !
+
+Found a mistake? There is something meaningless? Send me a [pull request](https://github.com/hujinghaoabcd/UnifieReadme/pulls) !
 
 ## License
 
