@@ -1,4 +1,4 @@
-<p align="center"><img src="Material/readme.svg"  width='30%'/></p>
+<p align="center"><img src="Material/readme.svg"  width='20%'/></p>
 
 <h1 align='center'>UnifieReadme</h1>
 
