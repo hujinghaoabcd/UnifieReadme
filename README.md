@@ -4,153 +4,145 @@
 
 <p align="center">
 <a href=""><img src="https://img.shields.io/badge/version-0.1-yellow.svg" /></a>
-<a href=""><img src="https://img.shields.io/badge/auther-Jinghao Hu-orange.svg" /></a>
+<a href=""><img src="https://img.shields.io/badge/author-Jinghao%20Hu-orange.svg" /></a>
 <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/markdown-1.0%7C2.0%7C3.0%7C4.0-blue.svg" /></a>
 <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-green.svg" /></a>
 </p>
 
+> **UnifieReadme**: A README generator that standardizes project documentation, ensuring clarity and consistency across your codebase.
 
-> UnifieReadme : Create a uniform README template for all projects to ensure consistency and clarity of the code base.
-
-<!-- ![](https://sdasddas.oss-cn-hangzhou.aliyuncs.com/keyan/202304091349962.png) -->
-![](https://sdasddas.oss-cn-hangzhou.aliyuncs.com/keyan/202304082359019.png)
-
-English | [中文](https://github.com/hujinghaoabcd/UnifieReadme/blob/main/README_CN.md)
+[English](README.md) | [中文](README_CN.md)
 
 ---
+
 ## Table of Contents
 
-<!-- - [Security](#security) -->
 - [Background](#background)
-- [Features](#Features)
-- [Install](#install)
+- [Features](#features)
+- [Installation](#installation)
 - [Usage](#usage)
-    - [Generator](#generator)
+  - [Command Line Usage](#command-line-usage)
 - [API](#api)
-- [Documentation](#Documentation)
-- [Authors](#Authors)
+  - [I/O Functions](#io-functions)
+  - [Formatting Functions](#formatting-functions)
+- [Documentation](#documentation)
+- [Authors](#authors)
 - [Contributing](#contributing)
 - [License](#license)
 
-<!-- ## Security
-
-... -->
 ---
+
 ## Background
 
-The README file should tell people why the package or software is being used, how to install it, and how to use it. Unifying README files can make it easier to create and maintain README files.
+Creating and maintaining consistent README files is essential for collaborative projects. **UnifieReadme** simplifies this process by offering a standardized README template and automated text-to-markdown conversion, ensuring all your project documentation stays uniform and easy to read.
 
 ---
+
 ## Features
 
- - **Harmonization :** Ensure consistency and clarity of the code base.
+- **Standardized Templates**: Provides a consistent structure for README files across projects.
+- **Markdown Conversion**: Converts plain text to markdown format.
+- **Customizable**: Easily modify templates to suit project-specific requirements.
 
- - **Customizable :** Users can modify and customize it according to their needs.
 ---
 
-## Install
+## Installation
 
-This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
+This project requires [Node.js](http://nodejs.org) and [npm](https://npmjs.com). Ensure these are installed before proceeding.
 
 ```sh
-$ npm install --global unifile-readme-spec
+$ npm install --global unifie-readme
 ```
+
 ---
+
 ## Usage
 
-Please note that unifilereadme package only provides the function of converting txt files to markdown format, if your txt file does not meet the syntax requirements of markdown format, the converted result may have unexpected errors.
+UnifieReadme offers tools to convert plain text to markdown format and generate standardized README templates. Be sure your text files follow markdown syntax to avoid conversion errors.
 
 ```javascript
 const fs = require('fs');
-const unifilereadme = require('unifilereadme');
+const unifieReadme = require('unifie-readme');
 
 const txtFile = fs.readFileSync('file.txt', 'utf-8');
-const markdown = unifilereadme(txtFile);
+const markdown = unifieReadme.convertToMarkdown(txtFile);
 
 fs.writeFileSync('file.md', markdown);
 ```
----
-### Generator
 
-You can also use the command line tool to generate a README.md file:
+---
+
+### Command Line Usage
+
+Generate a `README.md` file directly using the command line:
 
 ```sh
-$ unifilereadme --help
+$ unifie-readme --help
 
-  Usage
-    $ unifilereadme <input> <output>
+  Usage:
+    $ unifie-readme <input> <output>
 
-  Options
-    --help, -h  Show help options
+  Options:
+    --help, -h     Show help options
     --version, -v  Show version number
 
-  Examples
-    $ unifilereadme input.txt output.md
+  Examples:
+    $ unifie-readme input.txt output.md
 ```
 
-Where input.txt is the path of the txt file to be converted and output.md is the path of the generated markdown file. You can replace these two parameters according to the actual situation. The generated markdown file will be saved in the output.md file.
+Replace `input.txt` and `output.md` with the actual paths for your source and output files. The markdown file will be saved to `output.md`.
 
 ---
+
 ## API
 
-- I/O Functions
+### I/O Functions
 
-| Function                                          | Description                                   | Finish |
-| :------------------------------------------------ | :-------------------------------------------- | :----- |
-| create_grid                                       | 🌐 Creates a grid from  geotiff.               | ✅      |
-| read_raster                                       | 🌏 Reads raster data from geotiff.             | ✅      |
-| to_raster &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; | 🗺️ Write grids to raster files (e.g. geotiff). | ✅      |
+| Function          | Description                                                             | Status |
+| ----------------- | ----------------------------------------------------------------------- | ------ |
+| `convertToMarkdown` | 📄 Converts text files into markdown format, ensuring consistency.      | ✅      |
+| `loadTemplate`    | 📥 Loads a predefined README template for customization.                | ✅      |
+| `exportMarkdown`  | 💾 Saves the generated markdown file to the specified location.         | ✅      |
 
-- FLOW Functions
+### Formatting Functions
 
-| Function        | Description                              | Finish |
-| :-------------- | :--------------------------------------- | :----- |
-| water_supply    | ⤴️ Calculate water service supply.        | ❌      |
-| water_demand    | ⤵️ Calculate water service demand.        | ❌      |
-| water_direction | 🏳️ Calculate the water service direction. | ❌      |
-
-
-- Accumulate Functions
-
-
-| Function       | Description                             | Finish |
-| :------------- | :-------------------------------------- | :----- |
-| raster_flow    | 🚀 Calculate raster-scale water flow.    | ❌      |
-| watershed_flow | ⭐ Calculate watershed scale water flow. | ❌      |
-
-- View Functions:
-
-
-| Function                                          | Description                                                  | Finish |
-| :------------------------------------------------ | :----------------------------------------------------------- | :----- |
-| view_plot &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; | 📊 Draw a water service view.   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; | ❌      |
+| Function              | Description                                                       | Status |
+| --------------------- | ----------------------------------------------------------------- | ------ |
+| `validateMarkdown`    | ✔️ Validates markdown syntax and structure for standard formatting. | ✅      |
+| `addSection`          | ➕ Adds a new section to the markdown template.                    | ✅      |
+| `removeSection`       | ➖ Removes a specified section from the template.                  | ✅      |
 
 ---
 
 ## Documentation
- - [configuration]()
- - [design]()
- - [build](docs/build.md) 
- - [statistics]()
+
+- [Configuration]()
+- [Design]()
+- [Build Guide](docs/build.md)
+- [Statistics]()
+
 ---
+
 ## Authors
 
-[@JinghaoHu](https://github.com/hujinghaoabcd).
+Maintained by [Jinghao Hu](https://github.com/hujinghaoabcd).
+
 ---
+
 ## Contributing
 
-Thanks to the following people who participated in the project:
+Special thanks to those who contributed to this project:
 
 <a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=800&button=false" /></a>
 
 ---
 
-## Welcome to join !
+## Join Us!
 
-Found a mistake? There is something meaningless? Send me a [pull request](https://github.com/hujinghaoabcd/UnifieReadme/pulls) !
+Spotted an error or have suggestions? Submit a [pull request](https://github.com/hujinghaoabcd/UnifieReadme/pulls) to improve UnifieReadme.
 
 ---
 
 ## License
 
-[MIT © JinghaoHu.](../LICENSE)
+Distributed under the [MIT License © 2024 Jinghao Hu | UCAS](LICENSE). See `LICENSE` for more details.

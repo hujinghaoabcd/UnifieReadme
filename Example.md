@@ -12,6 +12,8 @@
 
 > UnifieReadme : Build custom readme templates for all projects to ensure consistency and clarity of the code base.
 
+[中文版本 (Chinese Version)](README_CN.md)
+
 ## Table of Contents
 
 - [Security](#security)
@@ -50,7 +52,7 @@ $ standard-readme-spec
 
 ### Generator
 
-To use the generator, look at [generator-standard-readme](https://github.com/RichardLitt/generator-standard-readme). There is a global executable to run the generator in that package, aliased as `standard-readme`.
+To use the generator, look at [generator-standard-readme](). There is a global executable to run the generator in that package, aliased as `standard-readme`.
 
 ## API
 
@@ -61,10 +63,11 @@ To use the generator, look at [generator-standard-readme](https://github.com/Ric
 ...
 
 ## Contributing
+...
 
-感谢以下参与项目的人：
-<a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=800&button=false" /></a>
+<!-- <a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=800&button=false" /></a> -->
 
 ## License
 
-[MIT © Richard Jinghaohu.](../LICENSE)
+
+Distributed under the [MIT © 2024 hujinghao | 中国科学院大学 (UCAS)](LICENSE). See `LICENSE` for more information.
